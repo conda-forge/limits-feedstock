@@ -1,18 +1,18 @@
 {% set name = "limits" %}
-{% set version = "2.2.0" %}
+{% set version = "2.3.1" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: da6346f0dcf85f17f0f1cc709c3408a3058cf6fee68313c288127c287237b411
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: e924e44f19265e38241b85d27b0b637b51b946f060aa1c63fa30887e465b8c39
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -31,7 +31,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: "Rate limiting utilities"
+  summary: Rate limiting utilities
   doc_url: https://limits.readthedocs.io/en/stable/
   dev_url: https://github.com/alisaifee/limits
 
