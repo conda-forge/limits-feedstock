@@ -1,7 +1,7 @@
 About limits
 ============
 
-Home: https://github.com/alisaifee/limits
+Home: https://limits.readthedocs.org
 
 Package license: MIT
 
