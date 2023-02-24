@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/limits-{{ version }}.tar.gz
   sha256: d4270d29591cc5eceab19be053455a4e619ba395062502bde2b5681af7dc1be8
 
 build:
@@ -38,3 +38,4 @@ about:
 extra:
   recipe-maintainers:
     - tiefling-cat
+    - xylar
