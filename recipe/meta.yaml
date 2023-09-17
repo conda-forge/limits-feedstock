@@ -38,7 +38,6 @@ about:
   summary: Rate limiting utilities
   dev_url: https://github.com/alisaifee/limits
   license: MIT
-  license_family: MIT
   license_file: LICENSE.txt
   doc_url: https://limits.readthedocs.io/en/stable/
   dev_url: https://github.com/alisaifee/limits
