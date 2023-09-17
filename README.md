@@ -1,11 +1,11 @@
-About limits
-============
+About limits-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/limits-feedstock/blob/main/LICENSE.txt)
 
 Home: https://limits.readthedocs.org
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/limits-feedstock/blob/master/LICENSE.txt)
 
 Summary: Rate limiting utilities
 
@@ -19,8 +19,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14996&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/limits-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14996&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/limits-feedstock?branchName=main">
       </a>
     </td>
   </tr>
