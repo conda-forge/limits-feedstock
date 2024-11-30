@@ -1,13 +1,13 @@
 {% set name = "limits" %}
-{% set version = "3.13.0" %}
+{% set version = "3.14.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/limits-{{ version }}.tar.gz
-  sha256: 6571b0c567bfa175a35fed9f8a954c0c92f1c3200804282f1b8f1de4ad98a953
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/limits-{{ version }}.tar.gz
+  sha256: 28f75bda2cfedbe823aa796581c352e18bdc26a2752a4842c8e92e63b0b22fac
 
 build:
   noarch: python
@@ -19,6 +19,7 @@ requirements:
     - python >=3.8
     - pip
   run:
+    - typing_extensions
     - python >=3.8
     - deprecated >=1.2
     - importlib-resources >=1.3
