@@ -1,5 +1,5 @@
 {% set name = "limits" %}
-{% set version = "5.5.0" %}
+{% set version = "5.6.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/limits-{{ version }}.tar.gz
-  sha256: ee269fedb078a904608b264424d9ef4ab10555acc8d090b6fc1db70e913327ea
+  sha256: 807fac75755e73912e894fdd61e2838de574c5721876a19f7ab454ae1fffb4b5
 
 build:
   noarch: python
