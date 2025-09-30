@@ -19,7 +19,8 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
+    - hatchling >=1.14.0
+    - hatch-vcs >=0.4.0
   run:
     - python >={{ python_min }}
     - deprecated >=1.2
