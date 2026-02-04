@@ -34,12 +34,7 @@ tests:
       imports:
         - limits
       python_version: ${{ python_min }}.*
-  - requirements:
-      run:
-        - python ${{ python_min }}.*
-        - pip
-    script:
-      - pip check
+      pip_check: true
 
 about:
   summary: Rate limiting utilities
