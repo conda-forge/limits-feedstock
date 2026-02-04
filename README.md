@@ -3,7 +3,7 @@ About limits-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/limits-feedstock/blob/main/LICENSE.txt)
 
-Home: https://limits.readthedocs.org
+Home: https://limits.readthedocs.org/
 
 Package license: MIT
 
