@@ -1,0 +1,55 @@
+schema_version: 1
+
+context:
+  name: limits
+  version: 5.7.0
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/limits-${{ version }}.tar.gz
+  sha256: 4a42261ed9974b6aaed0cb124fa4858c6e51c7af426c9109c1769b5343611767
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - hatchling >=1.14.0
+    - hatch-vcs >=0.4.0
+  run:
+    - python >=${{ python_min }}
+    - deprecated >=1.2
+    - packaging >=21
+    - typing_extensions
+
+tests:
+  - python:
+      imports:
+        - limits
+      python_version: ${{ python_min }}.*
+  - requirements:
+      run:
+        - python ${{ python_min }}.*
+        - pip
+    script:
+      - pip check
+
+about:
+  summary: Rate limiting utilities
+  license: MIT
+  license_file: LICENSE.txt
+  homepage: https://limits.readthedocs.org
+  repository: https://github.com/alisaifee/limits
+  documentation: https://limits.readthedocs.io/en/stable/
+
+extra:
+  recipe-maintainers:
+    - tiefling-cat
+    - xylar
