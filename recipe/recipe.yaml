@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: limits
-  version: 5.7.0
+  version: "5.8.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/limits-${{ version }}.tar.gz
-  sha256: 4a42261ed9974b6aaed0cb124fa4858c6e51c7af426c9109c1769b5343611767
+  sha256: c9e0d74aed837e8f6f50d1fcebcf5fd8130957287206bc3799adaee5092655da
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
